@@ -1,0 +1,88 @@
+<html>
+<head>
+  <style>
+    body {
+      background-color: #6487ff;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111;
+    }
+
+    #rcorners1 {
+      border-radius: 25px;
+      background: #73AD21;
+      padding: 20px;
+      width: 200px;
+      height: 150px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: relative;
+      -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+      animation-name: example;
+      animation-duration: 4s;
+    }
+
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes example {
+      0%   {background-color:red; left:0px; top:0px;}
+      25%  {background-color:yellow; left:200px; top:0px;}
+      50%  {background-color:blue; left:200px; top:200px;}
+      75%  {background-color:green; left:0px; top:200px;}
+      100% {background-color:red; left:0px; top:0px;}
+    }
+
+    /* Standard syntax */
+    @keyframes example {
+      0%   {background-color:red; left:0px; top:0px;}
+      25%  {background-color:yellow; left:200px; top:0px;}
+      50%  {background-color:blue; left:200px; top:200px;}
+      75%  {background-color:green; left:0px; top:200px;}
+      100% {background-color:red; left:0px; top:0px;}
+    }
+
+
+  </style>
+</head>
+</html>
+<body>
+<ul>
+  <li><a href="https://www.google.com/search?q=what+is+2+%2B+2&rlz=1C5CHFA_enUS701US701&oq=what+is+2+%2B+2&aqs=chrome..69i57j6j0l4.3991j0j4&sourceid=chrome&ie=UTF-8" href="#home">Rouge AI</a></li>
+  <li><a href="https://cooking.nytimes.com/guides/25-how-to-make-fried-chicken">Recipies</a></li>
+  <li><a href="https://soundcloud.com/jonathan-tiscareno/likes">SoundCloud</a></li>
+  <li><a href="https://www.google.com">Google</a></li>
+</ul>
+
+<p id='rcorners1'> My name is Jonny Tiscareno and I am a sophomore from Clovis, CA. I have 30 wins on Fortnite and I'm looking forward to learing how to build front ends that don't look like this.</p>
+
+<%= image_tag('j.png', style: "height: 240px; width: 169px") %>
+<div></div>
+</body>
